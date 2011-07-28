@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C237E6F513E17473005BB9EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C237E6F413E17473005BB9EB /* UIKit.framework */; };
+		C237E6F713E17473005BB9EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C237E6F613E17473005BB9EB /* Foundation.framework */; };
+		C237E6F913E17473005BB9EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C237E6F813E17473005BB9EB /* CoreGraphics.framework */; };
+		C237E6FB13E17473005BB9EB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C237E6FA13E17473005BB9EB /* CoreData.framework */; };
+		C237E70113E17473005BB9EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C237E6FF13E17473005BB9EB /* InfoPlist.strings */; };
+		C237E70413E17473005BB9EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C237E70313E17473005BB9EB /* main.m */; };
+		C237E70713E17473005BB9EB /* EveryNoteAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C237E70613E17473005BB9EB /* EveryNoteAppDelegate.m */; };
+		C237E70A13E17473005BB9EB /* EveryNote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C237E70813E17473005BB9EB /* EveryNote.xcdatamodeld */; };
+		C237E70E13E17473005BB9EB /* EveryNoteAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = C237E70D13E17473005BB9EB /* EveryNoteAppDelegate_iPhone.m */; };
+		C237E71113E17473005BB9EB /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C237E70F13E17473005BB9EB /* MainWindow_iPhone.xib */; };
+		C237E71513E17473005BB9EB /* EveryNoteAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = C237E71413E17473005BB9EB /* EveryNoteAppDelegate_iPad.m */; };
+		C237E71813E17473005BB9EB /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C237E71613E17473005BB9EB /* MainWindow_iPad.xib */; };
+		C237E71F13E17473005BB9EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C237E6F413E17473005BB9EB /* UIKit.framework */; };
+		C237E72013E17473005BB9EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C237E6F613E17473005BB9EB /* Foundation.framework */; };
+		C237E72113E17473005BB9EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C237E6F813E17473005BB9EB /* CoreGraphics.framework */; };
+		C237E72213E17473005BB9EB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C237E6FA13E17473005BB9EB /* CoreData.framework */; };
+		C237E72A13E17473005BB9EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C237E72813E17473005BB9EB /* InfoPlist.strings */; };
+		C237E72D13E17473005BB9EB /* EveryNoteTests.h in Resources */ = {isa = PBXBuildFile; fileRef = C237E72C13E17473005BB9EB /* EveryNoteTests.h */; };
+		C237E72F13E17473005BB9EB /* EveryNoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C237E72E13E17473005BB9EB /* EveryNoteTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C237E72313E17473005BB9EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C237E6E713E17473005BB9EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C237E6EF13E17473005BB9EB;
+			remoteInfo = EveryNote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C237E6F013E17473005BB9EB /* EveryNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EveryNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C237E6F413E17473005BB9EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C237E6F613E17473005BB9EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C237E6F813E17473005BB9EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C237E6FA13E17473005BB9EB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C237E6FE13E17473005BB9EB /* EveryNote-Info.plist */ = {isa = PBXFileReference; path = "EveryNote-Info.plist"; sourceTree = "<group>"; };
+		C237E70013E17473005BB9EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C237E70213E17473005BB9EB /* EveryNote-Prefix.pch */ = {isa = PBXFileReference; path = "EveryNote-Prefix.pch"; sourceTree = "<group>"; };
+		C237E70313E17473005BB9EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C237E70513E17473005BB9EB /* EveryNoteAppDelegate.h */ = {isa = PBXFileReference; path = EveryNoteAppDelegate.h; sourceTree = "<group>"; };
+		C237E70613E17473005BB9EB /* EveryNoteAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EveryNoteAppDelegate.m; sourceTree = "<group>"; };
+		C237E70913E17473005BB9EB /* EveryNote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EveryNote.xcdatamodel; sourceTree = "<group>"; };
+		C237E70C13E17473005BB9EB /* EveryNoteAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = EveryNoteAppDelegate_iPhone.h; path = iPhone/EveryNoteAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		C237E70D13E17473005BB9EB /* EveryNoteAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = EveryNoteAppDelegate_iPhone.m; path = iPhone/EveryNoteAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		C237E71013E17473005BB9EB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		C237E71313E17473005BB9EB /* EveryNoteAppDelegate_iPad.h */ = {isa = PBXFileReference; name = EveryNoteAppDelegate_iPad.h; path = iPad/EveryNoteAppDelegate_iPad.h; sourceTree = "<group>"; };
+		C237E71413E17473005BB9EB /* EveryNoteAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = EveryNoteAppDelegate_iPad.m; path = iPad/EveryNoteAppDelegate_iPad.m; sourceTree = "<group>"; };
+		C237E71713E17473005BB9EB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		C237E71E13E17473005BB9EB /* EveryNoteTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EveryNoteTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C237E72713E17473005BB9EB /* EveryNoteTests-Info.plist */ = {isa = PBXFileReference; path = "EveryNoteTests-Info.plist"; sourceTree = "<group>"; };
+		C237E72913E17473005BB9EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C237E72B13E17473005BB9EB /* EveryNoteTests-Prefix.pch */ = {isa = PBXFileReference; path = "EveryNoteTests-Prefix.pch"; sourceTree = "<group>"; };
+		C237E72C13E17473005BB9EB /* EveryNoteTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EveryNoteTests.h; sourceTree = "<group>"; };
+		C237E72E13E17473005BB9EB /* EveryNoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EveryNoteTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C237E6ED13E17473005BB9EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C237E6F513E17473005BB9EB /* UIKit.framework in Frameworks */,
+				C237E6F713E17473005BB9EB /* Foundation.framework in Frameworks */,
+				C237E6F913E17473005BB9EB /* CoreGraphics.framework in Frameworks */,
+				C237E6FB13E17473005BB9EB /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C237E71A13E17473005BB9EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C237E71F13E17473005BB9EB /* UIKit.framework in Frameworks */,
+				C237E72013E17473005BB9EB /* Foundation.framework in Frameworks */,
+				C237E72113E17473005BB9EB /* CoreGraphics.framework in Frameworks */,
+				C237E72213E17473005BB9EB /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C237E6E513E17473005BB9EB = {
+			isa = PBXGroup;
+			children = (
+				C237E6FC13E17473005BB9EB /* EveryNote */,
+				C237E72513E17473005BB9EB /* EveryNoteTests */,
+				C237E6F313E17473005BB9EB /* Frameworks */,
+				C237E6F113E17473005BB9EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C237E6F113E17473005BB9EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C237E6F013E17473005BB9EB /* EveryNote.app */,
+				C237E71E13E17473005BB9EB /* EveryNoteTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C237E6F313E17473005BB9EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C237E6F413E17473005BB9EB /* UIKit.framework */,
+				C237E6F613E17473005BB9EB /* Foundation.framework */,
+				C237E6F813E17473005BB9EB /* CoreGraphics.framework */,
+				C237E6FA13E17473005BB9EB /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C237E6FC13E17473005BB9EB /* EveryNote */ = {
+			isa = PBXGroup;
+			children = (
+				C237E70513E17473005BB9EB /* EveryNoteAppDelegate.h */,
+				C237E70613E17473005BB9EB /* EveryNoteAppDelegate.m */,
+				C237E70813E17473005BB9EB /* EveryNote.xcdatamodeld */,
+				C237E70B13E17473005BB9EB /* iPhone */,
+				C237E71213E17473005BB9EB /* iPad */,
+				C237E6FD13E17473005BB9EB /* Supporting Files */,
+			);
+			path = EveryNote;
+			sourceTree = "<group>";
+		};
+		C237E6FD13E17473005BB9EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C237E6FE13E17473005BB9EB /* EveryNote-Info.plist */,
+				C237E6FF13E17473005BB9EB /* InfoPlist.strings */,
+				C237E70213E17473005BB9EB /* EveryNote-Prefix.pch */,
+				C237E70313E17473005BB9EB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C237E70B13E17473005BB9EB /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				C237E70C13E17473005BB9EB /* EveryNoteAppDelegate_iPhone.h */,
+				C237E70D13E17473005BB9EB /* EveryNoteAppDelegate_iPhone.m */,
+				C237E70F13E17473005BB9EB /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		C237E71213E17473005BB9EB /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				C237E71313E17473005BB9EB /* EveryNoteAppDelegate_iPad.h */,
+				C237E71413E17473005BB9EB /* EveryNoteAppDelegate_iPad.m */,
+				C237E71613E17473005BB9EB /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		C237E72513E17473005BB9EB /* EveryNoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				C237E72C13E17473005BB9EB /* EveryNoteTests.h */,
+				C237E72E13E17473005BB9EB /* EveryNoteTests.m */,
+				C237E72613E17473005BB9EB /* Supporting Files */,
+			);
+			path = EveryNoteTests;
+			sourceTree = "<group>";
+		};
+		C237E72613E17473005BB9EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C237E72713E17473005BB9EB /* EveryNoteTests-Info.plist */,
+				C237E72813E17473005BB9EB /* InfoPlist.strings */,
+				C237E72B13E17473005BB9EB /* EveryNoteTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C237E6EF13E17473005BB9EB /* EveryNote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C237E73213E17473005BB9EB /* Build configuration list for PBXNativeTarget "EveryNote" */;
+			buildPhases = (
+				C237E6EC13E17473005BB9EB /* Sources */,
+				C237E6ED13E17473005BB9EB /* Frameworks */,
+				C237E6EE13E17473005BB9EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EveryNote;
+			productName = EveryNote;
+			productReference = C237E6F013E17473005BB9EB /* EveryNote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C237E71D13E17473005BB9EB /* EveryNoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C237E73513E17473005BB9EB /* Build configuration list for PBXNativeTarget "EveryNoteTests" */;
+			buildPhases = (
+				C237E71913E17473005BB9EB /* Sources */,
+				C237E71A13E17473005BB9EB /* Frameworks */,
+				C237E71B13E17473005BB9EB /* Resources */,
+				C237E71C13E17473005BB9EB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C237E72413E17473005BB9EB /* PBXTargetDependency */,
+			);
+			name = EveryNoteTests;
+			productName = EveryNoteTests;
+			productReference = C237E71E13E17473005BB9EB /* EveryNoteTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C237E6E713E17473005BB9EB /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C237E6EA13E17473005BB9EB /* Build configuration list for PBXProject "EveryNote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C237E6E513E17473005BB9EB;
+			productRefGroup = C237E6F113E17473005BB9EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C237E6EF13E17473005BB9EB /* EveryNote */,
+				C237E71D13E17473005BB9EB /* EveryNoteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C237E6EE13E17473005BB9EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C237E70113E17473005BB9EB /* InfoPlist.strings in Resources */,
+				C237E71113E17473005BB9EB /* MainWindow_iPhone.xib in Resources */,
+				C237E71813E17473005BB9EB /* MainWindow_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C237E71B13E17473005BB9EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C237E72A13E17473005BB9EB /* InfoPlist.strings in Resources */,
+				C237E72D13E17473005BB9EB /* EveryNoteTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C237E71C13E17473005BB9EB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C237E6EC13E17473005BB9EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C237E70413E17473005BB9EB /* main.m in Sources */,
+				C237E70713E17473005BB9EB /* EveryNoteAppDelegate.m in Sources */,
+				C237E70A13E17473005BB9EB /* EveryNote.xcdatamodeld in Sources */,
+				C237E70E13E17473005BB9EB /* EveryNoteAppDelegate_iPhone.m in Sources */,
+				C237E71513E17473005BB9EB /* EveryNoteAppDelegate_iPad.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C237E71913E17473005BB9EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C237E72F13E17473005BB9EB /* EveryNoteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C237E72413E17473005BB9EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C237E6EF13E17473005BB9EB /* EveryNote */;
+			targetProxy = C237E72313E17473005BB9EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C237E6FF13E17473005BB9EB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C237E70013E17473005BB9EB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C237E70F13E17473005BB9EB /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C237E71013E17473005BB9EB /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		C237E71613E17473005BB9EB /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C237E71713E17473005BB9EB /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+		C237E72813E17473005BB9EB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C237E72913E17473005BB9EB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C237E73013E17473005BB9EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C237E73113E17473005BB9EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C237E73313E17473005BB9EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EveryNote/EveryNote-Prefix.pch";
+				INFOPLIST_FILE = "EveryNote/EveryNote-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C237E73413E17473005BB9EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EveryNote/EveryNote-Prefix.pch";
+				INFOPLIST_FILE = "EveryNote/EveryNote-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C237E73613E17473005BB9EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EveryNote.app/EveryNote";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EveryNoteTests/EveryNoteTests-Prefix.pch";
+				INFOPLIST_FILE = "EveryNoteTests/EveryNoteTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C237E73713E17473005BB9EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EveryNote.app/EveryNote";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EveryNoteTests/EveryNoteTests-Prefix.pch";
+				INFOPLIST_FILE = "EveryNoteTests/EveryNoteTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C237E6EA13E17473005BB9EB /* Build configuration list for PBXProject "EveryNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C237E73013E17473005BB9EB /* Debug */,
+				C237E73113E17473005BB9EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C237E73213E17473005BB9EB /* Build configuration list for PBXNativeTarget "EveryNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C237E73313E17473005BB9EB /* Debug */,
+				C237E73413E17473005BB9EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C237E73513E17473005BB9EB /* Build configuration list for PBXNativeTarget "EveryNoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C237E73613E17473005BB9EB /* Debug */,
+				C237E73713E17473005BB9EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C237E70813E17473005BB9EB /* EveryNote.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C237E70913E17473005BB9EB /* EveryNote.xcdatamodel */,
+			);
+			currentVersion = C237E70913E17473005BB9EB /* EveryNote.xcdatamodel */;
+			path = EveryNote.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C237E6E713E17473005BB9EB /* Project object */;
+}
