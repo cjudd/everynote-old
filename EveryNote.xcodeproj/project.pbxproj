@@ -26,6 +26,10 @@
 		C237E72A13E17473005BB9EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C237E72813E17473005BB9EB /* InfoPlist.strings */; };
 		C237E72D13E17473005BB9EB /* EveryNoteTests.h in Resources */ = {isa = PBXBuildFile; fileRef = C237E72C13E17473005BB9EB /* EveryNoteTests.h */; };
 		C237E72F13E17473005BB9EB /* EveryNoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C237E72E13E17473005BB9EB /* EveryNoteTests.m */; };
+		C269E5CF13E2C0890046A6A6 /* attributions.txt in Resources */ = {isa = PBXBuildFile; fileRef = C269E5CE13E2C0890046A6A6 /* attributions.txt */; };
+		C2E711F313E2C46E0060E775 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C2E711F213E2C46E0060E775 /* Icon.png */; };
+		C2E711F513E2C47D0060E775 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2E711F413E2C47D0060E775 /* Icon@2x.png */; };
+		C2E711F713E2C49C0060E775 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = C2E711F613E2C49C0060E775 /* Icon-72.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		C237E72B13E17473005BB9EB /* EveryNoteTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EveryNoteTests-Prefix.pch"; sourceTree = "<group>"; };
 		C237E72C13E17473005BB9EB /* EveryNoteTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EveryNoteTests.h; sourceTree = "<group>"; };
 		C237E72E13E17473005BB9EB /* EveryNoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EveryNoteTests.m; sourceTree = "<group>"; };
+		C269E5CE13E2C0890046A6A6 /* attributions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = attributions.txt; sourceTree = "<group>"; };
+		C2E711F213E2C46E0060E775 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		C2E711F413E2C47D0060E775 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		C2E711F613E2C49C0060E775 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,10 @@
 		C237E6E513E17473005BB9EB = {
 			isa = PBXGroup;
 			children = (
+				C2E711F613E2C49C0060E775 /* Icon-72.png */,
+				C2E711F413E2C47D0060E775 /* Icon@2x.png */,
+				C2E711F213E2C46E0060E775 /* Icon.png */,
+				C269E5CE13E2C0890046A6A6 /* attributions.txt */,
 				C237E6FC13E17473005BB9EB /* EveryNote */,
 				C237E72513E17473005BB9EB /* EveryNoteTests */,
 				C237E6F313E17473005BB9EB /* Frameworks */,
@@ -255,6 +267,10 @@
 				C237E70113E17473005BB9EB /* InfoPlist.strings in Resources */,
 				C237E71113E17473005BB9EB /* MainWindow_iPhone.xib in Resources */,
 				C237E71813E17473005BB9EB /* MainWindow_iPad.xib in Resources */,
+				C269E5CF13E2C0890046A6A6 /* attributions.txt in Resources */,
+				C2E711F313E2C46E0060E775 /* Icon.png in Resources */,
+				C2E711F513E2C47D0060E775 /* Icon@2x.png in Resources */,
+				C2E711F713E2C49C0060E775 /* Icon-72.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +493,7 @@
 				C237E73413E17473005BB9EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C237E73513E17473005BB9EB /* Build configuration list for PBXNativeTarget "EveryNoteTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +502,7 @@
 				C237E73713E17473005BB9EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
