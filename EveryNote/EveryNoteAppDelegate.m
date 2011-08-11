@@ -22,7 +22,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-
+    
+    // Fetch Note contents
+    
+    NSManagedObjectContext *context = [self managedObjectContext];
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Note" 
+                                              inManagedObjectContext:context];
+    
+    [fetchRequest setEntity:entity];
+    
+    NSError *error;
+    NSArray *notes = [context executeFetchRequest:fetchRequest error:&error];
+    
+    for (Note *note in notes) {
+        NSLog(@"Note: name=%@, content=%@, createdDate=%@", 
+              note.name, note.contents, note.createdDate);
+    }        
+    
+    [fetchRequest release];
     
     [self.window makeKeyAndVisible];
     return YES;
@@ -148,7 +167,20 @@
         return __persistentStoreCoordinator;
     }
     
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"EveryNote.sqlite"];
+    //    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"EveryNote.sqlite"];
+    
+    // Stage existing database
+    NSString *storePath = [[[self applicationDocumentsDirectory] path] stringByAppendingString: @"EveryNote.sqlite"];
+    NSURL *storeURL = [NSURL fileURLWithPath:storePath];
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if (![fileManager fileExistsAtPath:storePath]) {
+        NSString *defaultStorePath = [[NSBundle mainBundle] pathForResource:@"EveryNote" ofType:@"sqlite"];
+        if (defaultStorePath) {
+            [fileManager copyItemAtPath:defaultStorePath toPath:storePath error:NULL];
+        }
+    }
+
     
     NSError *error = nil;
     __persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
