@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C210B19913F37A5F004C13B4 /* EveryNote.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C210B19813F37A5F004C13B4 /* EveryNote.sqlite */; };
 		C237E6F513E17473005BB9EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C237E6F413E17473005BB9EB /* UIKit.framework */; };
 		C237E6F713E17473005BB9EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C237E6F613E17473005BB9EB /* Foundation.framework */; };
 		C237E6F913E17473005BB9EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C237E6F813E17473005BB9EB /* CoreGraphics.framework */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C210B19813F37A5F004C13B4 /* EveryNote.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = EveryNote.sqlite; sourceTree = "<group>"; };
 		C237E6F013E17473005BB9EB /* EveryNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EveryNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C237E6F413E17473005BB9EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C237E6F613E17473005BB9EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -166,6 +168,7 @@
 		C237E6FD13E17473005BB9EB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C210B19813F37A5F004C13B4 /* EveryNote.sqlite */,
 				C237E6FE13E17473005BB9EB /* EveryNote-Info.plist */,
 				C237E6FF13E17473005BB9EB /* InfoPlist.strings */,
 				C237E70213E17473005BB9EB /* EveryNote-Prefix.pch */,
@@ -292,6 +295,7 @@
 				C2CC559413E8E7DC00072E96 /* Default.png in Resources */,
 				C2CC559613E8E7E400072E96 /* Default@2x.png in Resources */,
 				C2CC559713E8E8ED00072E96 /* Default-Landscape~ipad.png in Resources */,
+				C210B19913F37A5F004C13B4 /* EveryNote.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
