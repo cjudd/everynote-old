@@ -7,6 +7,7 @@
 //
 
 #import "EveryNoteAppDelegate.h"
+#import "Note.h"
 
 @implementation EveryNoteAppDelegate
 
@@ -21,7 +22,37 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    // Create managed entity
+    
+    NSManagedObjectContext *context = [self managedObjectContext];
+    Note *note = [NSEntityDescription
+                                      insertNewObjectForEntityForName:@"Note" 
+                                      inManagedObjectContext:context];
+    
+    note.name = @"Test Note";
+    note.contents = @"CocoaConf is awesome!!!";
+    note.createdDate = [NSDate date];
+    note.lastUpdatedDate = [NSDate date];    
+    
+    // Save managed entity
+    
+    NSError *error;
+    if (![context save:&error]) {
+        NSLog(@"Couldn't save: %@", [error localizedDescription]);
+    }
+    
+    // Retrieve managed entities
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Note" 
+                                              inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    NSArray *notes = [context executeFetchRequest:fetchRequest error:&error];
+    for (Note *note in notes) {
+        NSLog(@"Note: name=%@, content=%@, createdDate=%@", note.name, note.contents, note.createdDate);
+    }        
+    [fetchRequest release];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
