@@ -27,6 +27,7 @@
 		C237E72D13E17473005BB9EB /* EveryNoteTests.h in Resources */ = {isa = PBXBuildFile; fileRef = C237E72C13E17473005BB9EB /* EveryNoteTests.h */; };
 		C237E72F13E17473005BB9EB /* EveryNoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C237E72E13E17473005BB9EB /* EveryNoteTests.m */; };
 		C269E5CF13E2C0890046A6A6 /* attributions.txt in Resources */ = {isa = PBXBuildFile; fileRef = C269E5CE13E2C0890046A6A6 /* attributions.txt */; };
+		C295379813F291AA00717566 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = C295379713F291AA00717566 /* Note.m */; };
 		C2CC559213E8E7C800072E96 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CC559113E8E7C800072E96 /* Default-Portrait~ipad.png */; };
 		C2CC559413E8E7DC00072E96 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CC559313E8E7DC00072E96 /* Default.png */; };
 		C2CC559613E8E7E400072E96 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CC559513E8E7E400072E96 /* Default@2x.png */; };
@@ -72,6 +73,8 @@
 		C237E72C13E17473005BB9EB /* EveryNoteTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EveryNoteTests.h; sourceTree = "<group>"; };
 		C237E72E13E17473005BB9EB /* EveryNoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EveryNoteTests.m; sourceTree = "<group>"; };
 		C269E5CE13E2C0890046A6A6 /* attributions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = attributions.txt; sourceTree = "<group>"; };
+		C295379613F291AA00717566 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		C295379713F291AA00717566 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
 		C2CC558E13E8E7B900072E96 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		C2CC559113E8E7C800072E96 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		C2CC559313E8E7DC00072E96 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -151,6 +154,8 @@
 				C237E70513E17473005BB9EB /* EveryNoteAppDelegate.h */,
 				C237E70613E17473005BB9EB /* EveryNoteAppDelegate.m */,
 				C237E70813E17473005BB9EB /* EveryNote.xcdatamodeld */,
+				C295379613F291AA00717566 /* Note.h */,
+				C295379713F291AA00717566 /* Note.m */,
 				C237E70B13E17473005BB9EB /* iPhone */,
 				C237E71213E17473005BB9EB /* iPad */,
 				C237E6FD13E17473005BB9EB /* Supporting Files */,
@@ -327,6 +332,7 @@
 				C237E70A13E17473005BB9EB /* EveryNote.xcdatamodeld in Sources */,
 				C237E70E13E17473005BB9EB /* EveryNoteAppDelegate_iPhone.m in Sources */,
 				C237E71513E17473005BB9EB /* EveryNoteAppDelegate_iPad.m in Sources */,
+				C295379813F291AA00717566 /* Note.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
