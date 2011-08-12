@@ -15,7 +15,7 @@
     
     [super application:application didFinishLaunchingWithOptions:launchOptions];
     
-    NoteListViewController_iPhone *viewController = [[NoteListViewController alloc]
+    NoteListViewController *viewController = [[NoteListViewController_iPhone alloc]
                                               initWithStyle:UITableViewStylePlain];
     
     NSManagedObjectContext *context = [self managedObjectContext];

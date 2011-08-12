@@ -28,6 +28,9 @@
 		C237E72D13E17473005BB9EB /* EveryNoteTests.h in Resources */ = {isa = PBXBuildFile; fileRef = C237E72C13E17473005BB9EB /* EveryNoteTests.h */; };
 		C237E72F13E17473005BB9EB /* EveryNoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C237E72E13E17473005BB9EB /* EveryNoteTests.m */; };
 		C269E5CF13E2C0890046A6A6 /* attributions.txt in Resources */ = {isa = PBXBuildFile; fileRef = C269E5CE13E2C0890046A6A6 /* attributions.txt */; };
+		C2767CF513F59EFF0036FDC9 /* NoteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2767CF413F59EFF0036FDC9 /* NoteDetailViewController.m */; };
+		C2767CFA13F59F880036FDC9 /* NoteDetailViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = C2767CF813F59F880036FDC9 /* NoteDetailViewController_iPhone.m */; };
+		C2767CFB13F59F880036FDC9 /* NoteDetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2767CF913F59F880036FDC9 /* NoteDetailViewController_iPhone.xib */; };
 		C292126713F4BC0400153DD1 /* NoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C292126613F4BC0400153DD1 /* NoteListViewController.m */; };
 		C292126B13F4BE6600153DD1 /* NoteListViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = C292126A13F4BE6600153DD1 /* NoteListViewController_iPhone.m */; };
 		C292126E13F4BEF800153DD1 /* NoteListViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = C292126D13F4BEF800153DD1 /* NoteListViewController_iPad.m */; };
@@ -78,6 +81,11 @@
 		C237E72C13E17473005BB9EB /* EveryNoteTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EveryNoteTests.h; sourceTree = "<group>"; };
 		C237E72E13E17473005BB9EB /* EveryNoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EveryNoteTests.m; sourceTree = "<group>"; };
 		C269E5CE13E2C0890046A6A6 /* attributions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = attributions.txt; sourceTree = "<group>"; };
+		C2767CF313F59EFF0036FDC9 /* NoteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteDetailViewController.h; sourceTree = "<group>"; };
+		C2767CF413F59EFF0036FDC9 /* NoteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteDetailViewController.m; sourceTree = "<group>"; };
+		C2767CF713F59F880036FDC9 /* NoteDetailViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteDetailViewController_iPhone.h; sourceTree = "<group>"; };
+		C2767CF813F59F880036FDC9 /* NoteDetailViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteDetailViewController_iPhone.m; sourceTree = "<group>"; };
+		C2767CF913F59F880036FDC9 /* NoteDetailViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteDetailViewController_iPhone.xib; sourceTree = "<group>"; };
 		C292126513F4BC0400153DD1 /* NoteListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteListViewController.h; sourceTree = "<group>"; };
 		C292126613F4BC0400153DD1 /* NoteListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteListViewController.m; sourceTree = "<group>"; };
 		C292126913F4BE6600153DD1 /* NoteListViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteListViewController_iPhone.h; sourceTree = "<group>"; };
@@ -169,6 +177,8 @@
 				C295379713F291AA00717566 /* Note.m */,
 				C292126513F4BC0400153DD1 /* NoteListViewController.h */,
 				C292126613F4BC0400153DD1 /* NoteListViewController.m */,
+				C2767CF313F59EFF0036FDC9 /* NoteDetailViewController.h */,
+				C2767CF413F59EFF0036FDC9 /* NoteDetailViewController.m */,
 				C237E70B13E17473005BB9EB /* iPhone */,
 				C237E71213E17473005BB9EB /* iPad */,
 				C237E6FD13E17473005BB9EB /* Supporting Files */,
@@ -191,6 +201,9 @@
 		C237E70B13E17473005BB9EB /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				C2767CF713F59F880036FDC9 /* NoteDetailViewController_iPhone.h */,
+				C2767CF813F59F880036FDC9 /* NoteDetailViewController_iPhone.m */,
+				C2767CF913F59F880036FDC9 /* NoteDetailViewController_iPhone.xib */,
 				C292126913F4BE6600153DD1 /* NoteListViewController_iPhone.h */,
 				C292126A13F4BE6600153DD1 /* NoteListViewController_iPhone.m */,
 				C237E70C13E17473005BB9EB /* EveryNoteAppDelegate_iPhone.h */,
@@ -311,6 +324,7 @@
 				C2CC559613E8E7E400072E96 /* Default@2x.png in Resources */,
 				C2CC559713E8E8ED00072E96 /* Default-Landscape~ipad.png in Resources */,
 				C210B19913F37A5F004C13B4 /* EveryNote.sqlite in Resources */,
+				C2767CFB13F59F880036FDC9 /* NoteDetailViewController_iPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +369,8 @@
 				C292126713F4BC0400153DD1 /* NoteListViewController.m in Sources */,
 				C292126B13F4BE6600153DD1 /* NoteListViewController_iPhone.m in Sources */,
 				C292126E13F4BEF800153DD1 /* NoteListViewController_iPad.m in Sources */,
+				C2767CF513F59EFF0036FDC9 /* NoteDetailViewController.m in Sources */,
+				C2767CFA13F59F880036FDC9 /* NoteDetailViewController_iPhone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
