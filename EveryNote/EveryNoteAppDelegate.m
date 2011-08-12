@@ -13,6 +13,7 @@
 
 
 @synthesize window=_window;
+@synthesize navController=_navController;
 
 @synthesize managedObjectContext=__managedObjectContext;
 
@@ -21,8 +22,7 @@
 @synthesize persistentStoreCoordinator=__persistentStoreCoordinator;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    
+{    
     // Fetch Note contents
     
     NSManagedObjectContext *context = [self managedObjectContext];

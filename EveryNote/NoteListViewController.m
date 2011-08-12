@@ -7,9 +7,12 @@
 //
 
 #import "NoteListViewController.h"
-
+#import "Note.h"
 
 @implementation NoteListViewController
+
+@synthesize notes=__notes;
+@synthesize managedObjectContext=__managedObjectContext;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -22,6 +25,9 @@
 
 - (void)dealloc
 {
+    
+    [__notes release];
+    [__managedObjectContext release];
     [super dealloc];
 }
 
@@ -39,11 +45,16 @@
 {
     [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.title = @"Notes";
+        
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription 
+                                   entityForName:@"Note" inManagedObjectContext:__managedObjectContext];
+    [fetchRequest setEntity:entity];
+    NSError *error;
+    __notes = [[__managedObjectContext executeFetchRequest:fetchRequest error:&error] mutableCopy];
+
+    [fetchRequest release];
 }
 
 - (void)viewDidUnload
@@ -83,31 +94,37 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [__notes count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    UITableViewCell *cell = 
+    [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle 
+                                       reuseIdentifier:CellIdentifier] autorelease];
     }
     
-    // Configure the cell...
+    // Set up the cell...
+    Note *note = [__notes objectAtIndex:indexPath.row];
+    cell.textLabel.text = note.name;
     
-    return cell;
-}
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"MMMM d, YYYY"];
+    cell.detailTextLabel.text = [dateFormat stringFromDate:note.createdDate];  
+    [dateFormat release];
+    
+    return cell;}
 
 /*
 // Override to support conditional editing of the table view.
