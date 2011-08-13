@@ -170,7 +170,7 @@
     //    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"EveryNote.sqlite"];
     
     // Stage existing database
-    NSString *storePath = [[[self applicationDocumentsDirectory] path] stringByAppendingString: @"EveryNote.sqlite"];
+    NSString *storePath = [[[self applicationDocumentsDirectory] path] stringByAppendingString: @"/EveryNote.sqlite"];
     NSURL *storeURL = [NSURL fileURLWithPath:storePath];
     
     NSFileManager *fileManager = [NSFileManager defaultManager];
